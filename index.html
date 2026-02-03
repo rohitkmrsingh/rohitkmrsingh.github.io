@@ -1,64 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohit Kumar Singh | Data Engineer</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Rohit Kumar Singh</h1>
-        <p class="subtitle">Data Engineer</p>
-        <p class="intro">
-            I build reliable data pipelines and analytics systems using Python, SQL, and PostgreSQL.
-        </p>
-    </header>
+    <main class="container">
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> Python, SQL</li>
-            <li><strong>Databases:</strong> PostgreSQL</li>
-            <li><strong>Data Engineering:</strong> ETL, Incremental Loads, Data Modeling</li>
-            <li><strong>Tools:</strong> Git, VS Code</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Retail Sales Data Pipeline</h3>
-            <p>
-                End-to-end data pipeline that ingests raw retail sales data, cleans and validates it in Python,
-                and loads analytics-ready tables into PostgreSQL.
+        <!-- HEADER -->
+        <section class="header">
+            <h1>Rohit Kumar Singh</h1>
+            <h2>Data Engineer</h2>
+            <p class="tagline">
+                I build reliable data pipelines and analytics systems using Python, SQL, and PostgreSQL.
             </p>
-            <a href="https://github.com/rohitkmrsingh/retail-sales-data-pipeline" target="_blank">
-                View on GitHub
-            </a>
-        </div>
+        </section>
 
-        <div class="project">
-            <h3>SaaS Subscription Incremental ETL Pipeline</h3>
+        <!-- ABOUT -->
+        <section class="about">
+            <h3>About</h3>
             <p>
-                Incremental ETL pipeline for SaaS customer, subscription, and event data using PostgreSQL staging
-                and core schemas with timestamp-based upsert logic.
+                I am a data engineer with hands-on experience designing and building end-to-end ETL pipelines.
+                My focus is on transforming raw, messy data into clean, analytics-ready datasets that
+                support accurate reporting and decision-making.
             </p>
-            <a href="https://github.com/rohitkmrsingh/project-02-saas-subscription-etl" target="_blank">
-                View on GitHub
-            </a>
-        </div>
-    </section>
+            <p>
+                I enjoy working on data modeling, SQL optimization, incremental data processing,
+                and building systems that are easy to debug, extend, and explain.
+            </p>
+        </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>
-            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/rohitkmrsingh" target="_blank">GitHub</a>
-        </p>
-    </section>
+        <!-- SKILLS -->
+        <section class="skills">
+            <h3>Core Skills</h3>
+            <ul>
+                <li>Python (pandas, data cleaning, ETL scripting)</li>
+                <li>SQL (PostgreSQL, joins, window functions, analytics queries)</li>
+                <li>Data Modeling (fact & dimension tables)</li>
+                <li>ETL Pipelines (full refresh and incremental loads)</li>
+                <li>Data Quality & Validation</li>
+                <li>Git, GitHub, VS Code</li>
+            </ul>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects">
+            <h3>Projects</h3>
+
+            <!-- PROJECT 1 -->
+            <div class="project">
+                <h4>Retail Sales Data Engineering Pipeline</h4>
+                <p>
+                    Designed and implemented an end-to-end retail analytics pipeline using Python and PostgreSQL.
+                    The project transforms raw transactional sales data into a clean, normalized schema
+                    suitable for reliable business analytics.
+                </p>
+                <ul>
+                    <li>Cleaned raw retail data using Python, handling missing customers, inconsistent product descriptions, and returns</li>
+                    <li>Designed customer, product, and sales tables with primary and foreign key constraints</li>
+                    <li>Preserved negative quantities to correctly model product returns and net revenue</li>
+                    <li>Built SQL queries to analyze revenue by country, top products, and monthly sales trends</li>
+                </ul>
+                <p>
+                    <a href="https://github.com/rohitkmrsingh/retail-sales-data-pipeline" target="_blank">
+                        GitHub Repository →
+                    </a>
+                </p>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="project">
+                <h4>SaaS Subscription Incremental ETL Pipeline</h4>
+                <p>
+                    Built an incremental ETL pipeline simulating a SaaS analytics system.
+                    The pipeline separates raw ingestion from analytics-ready data using
+                    staging and core schemas.
+                </p>
+                <ul>
+                    <li>Implemented timestamp-based incremental loads to avoid full table reloads</li>
+                    <li>Used upsert logic to handle late-arriving and updated records safely</li>
+                    <li>Modeled customers, subscriptions, and events with proper referential integrity</li>
+                    <li>Enabled analytics for active subscriptions, revenue metrics, and user engagement</li>
+                </ul>
+                <p>
+                    <a href="https://github.com/rohitkmrsingh/saas-subscription-etl" target="_blank">
+                        GitHub Repository →
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact">
+            <h3>Contact</h3>
+            <p>
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/rohitkmrsingh" target="_blank">GitHub</a>
+            </p>
+            <p>Email: rohit@example.com</p>
+        </section>
+
+    </main>
 
 </body>
 </html>
